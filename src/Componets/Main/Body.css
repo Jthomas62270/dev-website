@@ -1,0 +1,44 @@
+.body {
+}
+
+.body-container {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.body-portrait{ 
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.body-text-container{
+    font-family: 'Playfair Display', serif;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px; 
+    margin-left: auto;
+}
+
+.body-text-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-top: 0;
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+.body-text-p {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: rgb(129, 126, 126);
+    text-align: left;
+
+    margin-top: 0px;
+    display: flex;
+
+}
+
