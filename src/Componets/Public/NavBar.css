@@ -3,7 +3,6 @@
     justify-content: space-between;
     width: 100%;
     height: 85px;
-    border: red solid 1px; 
 }
 
 .nav-container{
@@ -14,7 +13,6 @@
     display: flex;
     justify-content: center;
     width: 200px; 
-    border: solid blue 1px; 
 }
 
 .nav-webname { 
@@ -26,7 +24,6 @@
 .nav-links-container {
     list-style: none;
     display: flex;
-    border: solid red 1px; 
 
     width: 400px; 
     justify-content: center;
