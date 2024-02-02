@@ -1,7 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './NavBar.css'
 
 function NavBar() {
+
+  const[isScrolled, setScrolled] = useState(false); 
+  const[isBottom, setBottom] = useState(false); 
+  const onScroll = () => {
+    const scrollPosition = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const totalHeight = document.body.scrollHeight;
+
+    if(window.scrollY > 10) { 
+      setScrolled(true);
+    } else { 
+      setScrolled(false); 
+    }
+    if (windowHeight + scrollPosition >= totalHeight) {
+      setBottom(true);
+    } else {
+      setBottom(false);
+    }
+  };
+
+  useEffect(() => { 
+
+  window.addEventListener('scroll', onScroll); 
+
+  return () => window.removeEventListener('scroll', onScroll);
+  },[]);  
 
   const aboutClick = () => {
 
@@ -16,7 +42,7 @@ function NavBar() {
   }
 
   return (
-    <div className='nav'>
+    <div className={`nav ${isScrolled ? 'nav-scrolled':''}`}>
       <div className='nav-container'> 
         <div className='nav-title'><div className='nav-webname'>John Garcia</div></div>
       </div>
