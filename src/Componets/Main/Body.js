@@ -3,6 +3,23 @@ import "./Body.css"
 
 function Body() {
 
+    const emailAddress = "jthomas62270@gmail.com"; 
+
+    const gitClicked = () => { 
+        const git = "https://github.com/Jthomas62270";
+        window.open(git, '_blank'); 
+    }
+
+    const linkClicked = () => {
+        const link = "https://www.linkedin.com/in/john-garcia-238ab1253/"
+        window.open(link, '_blank'); 
+    }
+    
+    const mailClicked = () => { 
+        const mailto = `mailto:${emailAddress}`; 
+        window.location.href = mailto;
+    }
+
   return (
     <div className='body'>
         <div className='body-container'>
@@ -14,21 +31,21 @@ function Body() {
             </div>
         </div>
         <div className='body-socials-container'>
-            <div className='body-linkedin-links'>
+            <div className='body-linkedin-links' onClick={linkClicked}>
                 <div className='body-linkedin-button'>
                     <img src="../../In-Blue-72@2x.png" className='body-linkedin-logo' alt="linkedin"/>
                     <div className='body-linkedin-text'>Linkedin Account</div>
                 </div>
             </div>
-            <div className='body-github-links'>
+            <div className='body-github-links' onClick={gitClicked}>
                 <div className='body-github-button' id="body-github-button">
                     <img src="../../github.svg" className='body-github-logo' alt="github"/>
                     <div className='body-github-text'>GitHub Account</div>
                 </div>
             </div>
-            <div className='body-gmail-links'>
+            <div className='body-gmail-links' onClick={mailClicked}>
                 <div className='body-gmail-button' id="body-gmail-button">
-                    <img alt="gmail"/>
+                    <img src="../../Gmail_icon_(2020).png" className="body-gmail-logo" alt="gmail"/>
                     <div className='body-gmail-text'>Gmail Account</div>
                 </div>
             </div>

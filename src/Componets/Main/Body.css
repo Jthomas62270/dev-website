@@ -1,5 +1,4 @@
-.body {
-}
+
 
 .body-container {
     display: flex;
@@ -160,7 +159,7 @@
 
 .body-gmail-links:hover .body-gmail-logo{
     transition: all 0.3s ease-in-out; 
-    filter: brightness(0) saturate(100%) invert(34%) sepia(93%) saturate(748%) hue-rotate(-10deg) brightness(99%) contrast(100%);
+    filter: none;
 }
 .body-gmail-links:hover .body-gmail-text {
     color: rgb(174, 3, 3); 
@@ -177,6 +176,7 @@
     width: 30px;
     margin-left: 18px;
     margin-top: 4px;
+    filter: brightness(0);
 }
 
 .body-gmail-text {
