@@ -44,7 +44,7 @@ function NavBar() {
   return (
     <div className={`nav ${isScrolled ? 'nav-scrolled':''}`}>
       <div className='nav-container'> 
-        <div className='nav-title'><div className='nav-webname'>John Garcia</div></div>
+        <div className='nav-title'><div className='nav-webname'></div></div>
       </div>
       <div className='nav-links-container'> 
         <div className='nav-links'>
