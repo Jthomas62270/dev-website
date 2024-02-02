@@ -2,13 +2,41 @@ import React from 'react'
 import "./Body.css"
 
 function Body() {
+
   return (
     <div className='body'>
         <div className='body-container'>
             <img src="../../portrait.jpg" className="body-portrait"alt="Portrait" />
             <div className='body-text-container'>
                 <h1 className='body-text-header'>Hello, World!</h1>
-                <p className='body-text-p'>I am John Garcia. Software Developer. Computer Scientist. Designer. Creator. I live in Boston, MA. and am looking to work for a team to help create the next big thing. </p>
+                <p className='body-text-p'>I am John Garcia. Software Developer. Computer Scientist. Designer. Creator. I live in Boston, MA. 
+                and am looking to work with a team to help create the next big thing. Experienced in Frontend and Backend Code Development, </p>
+            </div>
+        </div>
+        <div className='body-socials-container'>
+            <div className='body-linkedin-links'>
+                <div className='body-linkedin-button'>
+                    <img src="../../In-Blue-72@2x.png" className='body-linkedin-logo' alt="linkedin"/>
+                    <div className='body-linkedin-text'>Linkedin Account</div>
+                </div>
+            </div>
+            <div className='body-github-links'>
+                <div className='body-github-button' id="body-github-button">
+                    <img src="../../github.svg" className='body-github-logo' alt="github"/>
+                    <div className='body-github-text'>GitHub Account</div>
+                </div>
+            </div>
+            <div className='body-gmail-links'>
+                <div className='body-gmail-button' id="body-gmail-button">
+                    <img alt="gmail"/>
+                    <div className='body-gmail-text'>Gmail Account</div>
+                </div>
+            </div>
+        </div>
+        <div className='body-related-skills-container'>
+        </div>
+        <div className='body-footer-container'>
+            <div className='body-footer'> 
             </div>
         </div>
     </div>
