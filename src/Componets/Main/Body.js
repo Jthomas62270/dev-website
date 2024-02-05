@@ -1,8 +1,11 @@
 import React from 'react'
+import { useScroll } from '../Service/ScrollContext';
 import "./Body.css"
 
 
 function Body() {
+
+    const {section1Ref, section2Ref, section3Ref} = useScroll(); 
 
     const emailAddress = "jthomas62270@gmail.com"; 
 
@@ -31,7 +34,7 @@ function Body() {
                 and am looking to work with a team to help create the next big thing. Experienced in Frontend and Backend Code Development, </p>
             </div>
         </div>
-        <div className='body-socials-container'>
+        <div className='body-socials-container' ref={section1Ref}>
             <div className='body-linkedin-links' onClick={linkClicked}>
                 <div className='body-linkedin-button'>
                     <img src="../../In-Blue-72@2x.png" className='body-linkedin-logo' alt="linkedin"/>
@@ -52,9 +55,10 @@ function Body() {
             </div>
         </div>
         <div className='body-related-skills-container'>
-        </div>
-        <div className='body-footer-container'>
-            <div className='body-footer'> 
+            <div className='about-conatiner'> 
+            <div className='about-me-title'>
+                More About Me!
+            </div>
             </div>
         </div>
     </div>
