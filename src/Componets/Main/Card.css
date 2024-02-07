@@ -1,5 +1,5 @@
 .card {
-    background-color: rgba(77, 75, 75, 0.61);
+    background-color: white; 
     width: 600px;
     height: 400px;
     border-radius: 10px;
@@ -12,6 +12,8 @@
     padding: 30px;
     font-size: 20px;
     font-weight: 700; 
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-container { 
@@ -21,7 +23,9 @@
 
 .card-text-container {
     padding: 30px;
-    border: 1px solid red; 
+    border-right: 1px solid black; 
     width: 350px; 
-    height: 100%;
+    word-wrap: break-word;
+    text-align: left;
+    color: black; 
 }
