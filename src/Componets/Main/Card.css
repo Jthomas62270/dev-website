@@ -1,0 +1,27 @@
+.card {
+    background-color: rgba(77, 75, 75, 0.61);
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, .3);
+    color: white; 
+}
+
+.card-project-title { 
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 700; 
+}
+
+.card-container { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text-container {
+    padding: 30px;
+    border: 1px solid red; 
+    width: 350px; 
+    height: 100%;
+}

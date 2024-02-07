@@ -2,6 +2,8 @@ import React from 'react'
 import { useScroll } from '../Service/ScrollContext';
 import "./Body.css"
 import PhotoCarousel from './PhotoCarousel';
+import Card from './Card';
+import projects from '../Service/Card.json'; 
 
 
 function Body() {
@@ -26,7 +28,7 @@ function Body() {
     }
 
   return (
-    <div className='body'>
+    <div className='body'> 
         <div className='body-container'>
             <img src="../../portrait.jpg" className="body-portrait"alt="Portrait" />
             <div className='body-text-container'>
@@ -59,13 +61,20 @@ function Body() {
             <div className='about-me-title'>
                 More About Me!
             </div>
-            <div className='about-conatiner'>
+            <div className='about-container'>
                 <div className='about-text'>
-                    Hello, World!
+                    <p>
+                        <i>Born and raised in Swansea Ma. </i> 
+                    </p>
                 </div>
-                <div className='about-photos-container'>
-                    <PhotoCarousel photos={photos} />
-                </div>
+                <PhotoCarousel photos={photos} />
+            </div>
+        </div>
+        <div className='work'>
+            <div className='work-container'>
+                {projects.items.map((item) => (
+                    <Card title={item.title} description={item.description} imgUrl={item.imgUrl} className="work-cards"/>
+                ))}
             </div>
         </div>
     </div>

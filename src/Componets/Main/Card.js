@@ -1,9 +1,17 @@
 import React from 'react'
+import "./Card.css"
 
-function Card() {
+const Card = ({title, description, imgUrl}) => {
+
   return (
-    <div>
-      
+    <div className='card'>
+      <div className='card-project-title'>{title}</div>
+      <div className='card-container'>
+        <div className='card-text-container'>
+          {description}
+        </div>
+        <img src={imgUrl} alt='logo'/>
+      </div>
     </div>
   )
 }

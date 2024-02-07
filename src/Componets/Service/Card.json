@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "title": "alpha-project", 
+            "description": "Wish is a School project created to emulate a terminal shell", 
+            "imgUrl": "../../alpha-project"
+        }, 
+        {
+            "title": "Web Scraping", 
+            "description": "Using python's beautiful soup web scraping tool inorder to find notable people as well as their birth and death date", 
+            "imgUrl": "../../web-scraping"
+        }, 
+        {
+            "title": "Web Scraping", 
+            "description": "Using python's beautiful soup web scraping tool inorder to find notable people as well as their birth and death date", 
+            "imgUrl": "../../web-scraping"
+        },  
+        {
+            "title": "Web Scraping", 
+            "description": "Using python's beautiful soup web scraping tool inorder to find notable people as well as their birth and death date", 
+            "imgUrl": "../../web-scraping"
+        }   
+    ] 
+}
