@@ -1,12 +1,13 @@
 import React from 'react'
 import { useScroll } from '../Service/ScrollContext';
 import "./Body.css"
+import PhotoCarousel from './PhotoCarousel';
 
 
 function Body() {
 
     const {section1Ref, section2Ref, section3Ref} = useScroll(); 
-
+    const photos = ['../../Portrait.jpg', '../../Portrait.jpg']; 
     const emailAddress = "jthomas62270@gmail.com"; 
 
     const gitClicked = () => { 
@@ -55,10 +56,16 @@ function Body() {
             </div>
         </div>
         <div className='body-related-skills-container'>
-            <div className='about-conatiner'> 
             <div className='about-me-title'>
                 More About Me!
             </div>
+            <div className='about-conatiner'>
+                <div className='about-text'>
+                    Hello, World!
+                </div>
+                <div className='about-photos-container'>
+                    <PhotoCarousel photos={photos} />
+                </div>
             </div>
         </div>
     </div>

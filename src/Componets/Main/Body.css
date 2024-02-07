@@ -203,12 +203,26 @@
     margin-right: 150px;
 }
 
-.about-container {
-
-}
-
 .about-me-title {
-    
+    color: white;
+    font-size: 75px;
+    text-align: left;
+    padding: 20px; 
+    padding-left: 40px;
 }
 
+.about-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-photo-container {
+    flex: 1;
+}
+
+.about-text {
+    flex: 1; 
+}
 

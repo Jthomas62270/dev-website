@@ -25,7 +25,7 @@ function NavBar() {
   return (
     <div className={`nav ${isScrolled ? 'nav-scrolled':''}`}>
       <div className='nav-container'> 
-        <div className='nav-title'><img src='../../J.png' className='nav-webname' /></div>
+        <div className='nav-title'><img src='../../J.png' className='nav-webname' alt="Logo"/></div>
       </div>
       <div className='nav-links-container'> 
         <div className='nav-links'>
